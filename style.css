@@ -1,0 +1,98 @@
+h1 {
+    text-align: center;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-areas:
+    'one one two two three three'
+    'one one two two three three'
+    'one one two two three three'
+}
+
+@media screen and (max-width: 1248px) {
+    .container{
+        grid-template-areas:
+        'one one one two two two'
+        'one one one two two two'
+        'three three three three three three'
+        'three three three three three three'
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        grid-template-areas:
+        'one one one one one one'
+        'two two two two two two'
+        'three three three three three three'
+    }
+}
+
+.insidebox1{
+    position: absolute;
+    height: 25px;
+    width: 100px;
+    background: rgb(199, 99, 116);
+    top: 0;
+    right: 0;
+    text-align: center;
+    border: 1px solid black; 
+    
+}
+.insidebox2{
+    position: absolute;
+    height: 25px;
+    width: 100px;
+    background: limegreen;
+    top: 0;
+    right: 0;
+    text-align: center;
+    border: 1px solid black;
+}
+.insidebox3{
+    position: absolute;
+    height: 25px;
+    width: 100px;
+    background: orange;
+    top: 0;
+    right: 0;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.box{
+    width: 100%;
+    background: beige;
+    height: 220px;
+    position: relative;
+    font-size: larger;
+    border: 2px solid black;
+}
+
+.box-1{
+    grid-area: one;
+}
+.box-2 { 
+    grid-area: two;
+}
+.box-3 { 
+    grid-area: three;
+}
+
+
+
+
