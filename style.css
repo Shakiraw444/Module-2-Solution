@@ -1,6 +1,7 @@
 h1 {
     position: absolute;
     top: 0px; 
+    bottom: 20px;
     left: auto
   }
 body{
@@ -79,7 +80,7 @@ body{
 .box{
     width: 100%;
     background: beige;
-    height: 220px;
+    height: 180px;
     position: relative;
     font-size: larger;
     border: 2px solid black;
