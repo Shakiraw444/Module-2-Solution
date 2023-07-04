@@ -1,5 +1,7 @@
 h1 {
-    text-align: center;
+    position: absolute;
+    top: 0px; 
+    left: auto
   }
 body{
     margin: 0;
@@ -81,6 +83,7 @@ body{
     position: relative;
     font-size: larger;
     border: 2px solid black;
+    
 }
 
 .box-1{
